@@ -1,0 +1,223 @@
+:root {
+  --primary-title-color: #212121;
+  --primary-text-color: #757575;
+  --accent-color: #2196f3;
+  --secondary-title-color: #ffffff;
+  --button-background: #f5f4fa;
+  --hero-background: #2f303a;
+}
+
+/* Header */
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--primary-text-color);
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0px;
+  margin: 0px;
+}
+p {
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+.container {
+  display: flex;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 93px;
+  font-family: Raleway;
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.logo-part-head {
+  color: var(--primary-title-color);
+}
+.logo-part-foot {
+  color: var(--secondary-title-color);
+}
+.nav-list {
+  display: flex;
+}
+.nav-link .item {
+  color: var(--primary-title-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-link .item {
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+.nav-link + .nav-link {
+  margin-left: 50px;
+}
+.nav-link .item:hover,
+.nav-link .item:focus {
+  color: var(--accent-color);
+}
+
+.nav-list .current {
+  color: var(--accent-color);
+}
+.info-list-head {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.info-link + .info-link {
+  margin-left: 50px;
+}
+.info-list-head .item {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.info-list-head .item:hover,
+.info-list-head .item:focus {
+  color: var(--accent-color);
+}
+
+/* Main */
+.hero-title {
+  color: var(--secondary-title-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background-color: var(--hero-background);
+}
+.button-offer {
+  color: var(--secondary-title-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+}
+
+.features-title {
+  color: var(--primary-title-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-list {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.section-title {
+  color: var(--primary-title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.members-name {
+  color: var(--primary-title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.members-position {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.address {
+  color: var(--secondary-title-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.info-list-foot {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.info-list-foot:hover,
+.info-list-foot:focus {
+  color: var(--accent-color);
+}
+/* Фон сделал для видимости контента с белым шрифтом */
+.footer {
+  background-color: var(--hero-background);
+}
+
+/* Стили для Portfolio */
+.filter-button {
+  color: var(--primary-title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--button-background);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--secondary-title-color);
+  background-color: var(--accent-color);
+}
+
+.project-title {
+  color: var(--primary-title-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project-type {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
