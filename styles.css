@@ -5,6 +5,7 @@
   --secondary-title-color: #ffffff;
   --button-background: #f5f4fa;
   --hero-background: #2f303a;
+  --border: #eeeeee;
 }
 
 /* Header */
@@ -126,7 +127,7 @@ img {
   background-color: var(--hero-background);
 }
 .hero-container {
-  width: 770px;
+  width: 700px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -206,14 +207,14 @@ img {
   text-align: center;
 }
 
-.work {
+.doing {
   padding-bottom: 94px;
 }
-.work-list {
+.doing-list {
   display: flex;
 }
 
-.work-item:not(:last-child) {
+.doing-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -237,12 +238,13 @@ img {
 }
 
 .card {
-  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
 }
 .card-content {
+  background-color: var(--secondary-title-color);
   padding: 30px 0px;
 }
 .members-name {
@@ -296,22 +298,61 @@ img {
 }
 
 /* Стили для Portfolio */
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  border-top: 1px solid #ececec;
+}
+.filter {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
 .filter-button {
+  display: block;
   color: var(--primary-title-color);
+  background-color: var(--button-background);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-  background-color: var(--button-background);
+  padding: 6px 22px;
+  border: transparent;
+  border-radius: 4px;
 }
-
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
 .filter-button:hover,
 .filter-button:focus {
   color: var(--secondary-title-color);
   background-color: var(--accent-color);
 }
+.work-card {
+  display: block;
 
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.work-card:nth-child(3n) {
+  margin-right: 0px;
+}
+.work-card:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work-card-content {
+  border-bottom: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  padding: 20px 24px;
+}
 .project-title {
   color: var(--primary-title-color);
   font-weight: 700;
